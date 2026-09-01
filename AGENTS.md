@@ -10,7 +10,7 @@
 3. Minimalismo (sección 6) — se aplica solo después de 1 y 2.
 
 ## 1. Resumen del proyecto
-Backup/versionado de **VS Code Profiles** (`.code-profile`) del usuario, uno por stack de trabajo (Java, Python, Web, Markdown) más uno base (`predeterminado`). Permite restaurar tema, settings, keybindings y lista de extensiones en cualquier máquina vía `Profiles: Import Profile`. Uso individual, no colaborativo.
+Backup/versionado de **VS Code Profiles** (`.code-profile`) del usuario, uno por stack de trabajo (Java, Python, Web, Markdown, DevOps) más uno base (`predeterminado`). Permite restaurar tema, settings, keybindings y lista de extensiones en cualquier máquina vía `Profiles: Import Profile`. Uso individual, no colaborativo.
 
 ## 2. Formato técnico
 - No hay lenguaje de aplicación ni framework — son exports JSON de VS Code.
@@ -21,8 +21,9 @@ Backup/versionado de **VS Code Profiles** (`.code-profile`) del usuario, uno por
 ```
 Java.code-profile          # perfil Spring Boot/Maven/Gradle
 Python.code-profile        # perfil Jupyter/Ruff/Pylance
-Web.code-profile           # perfil React/Tailwind/Bootstrap
+Web.code-profile           # perfil React/Angular/TypeScript, Tailwind/Bootstrap
 Markdown.code-profile      # perfil docs/mermaid/markdownlint
+DevOps.code-profile        # perfil Terraform/AWS, Docker Compose, K8s, MongoDB
 predeterminado.code-profile # perfil base, mínimo de extensiones
 ```
 Todos comparten tema `Monokai Pro (Filter Spectrum)`, `material-icon-theme`, fuente `Hack Nerd Font`, lang pack ES.
